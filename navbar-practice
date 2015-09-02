@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog Page</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="normal.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+
+  (function(){
+    $(window).scroll(function() {
+    
+        // check if window scroll for more than 430px. May vary
+        // as per the height of your main banner.
+        
+        if($(this).scrollTop() > 430) { 
+            $('.fixed-navigation').addClass('opaque'); // adding the opaque class
+        } else {
+            $('.fixed-navigation').removeClass('opaque'); // removing the opaque class
+        }
+    });
+  })();
+    
+
+	</script>
+</head>
+<body>
+	<nav class="fixed-navigation opaque">
+		<div class="nav-left">
+			<h2 class="nav-logo">ELRUMI</h2>
+		</div>
+		<div class="nav-right">
+			<ul class="nav-menu">
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#Work">Work</a></li>
+				<li><a href="#Blog">Blog</a></li>
+				<li><a href="#Contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header class="blog-header">
+		<h1>Discover Our News<br> & Stay Inspired</h1>
+	</header>
+	<main class="blog-content">
+		<div class="blog-title">
+			<h2>Our Blog</h2>
+			<p>Latest News and More</p>
+		</div>
+		<div class="pic-post">
+			<h3>You Don't Need Eyes To See</h3>
+			<i class="fa fa-clock-o"></i>
+			<i class="fa fa-comments"></i>
+			<img src="assets/blog page/post-01.jpg" alt="post1">
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, sonsectetur, adipisci velit, sed quia non percipiatis unde omni voluptatem quia volupta sit aspernatur aut odit aut fugit, sed quaia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+			<a href="#">Read More &#9654</a>
+		</div>
+		<div class="written-post quote">
+			<div class="swirl-background">
+				<img src="assets/blog page/icon-quote.png" alt="quotes">
+				<p>"Working with Elrumi was extremely fun, they delivered results on time and sometimes even ahead of schedule."</p>
+				<h4>Dave August</h4>
+			</div>
+		</div>
+		<div class="pic-post">
+			<h3>Interview with Michelle May</h3>
+			<i class="fa fa-clock-o"></i>
+			<i class="fa fa-comments"></i>		
+			<img src="assets/blog page/post-02.jpg" alt="post2">
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, sonsectetur, adipisci velit, sed quia non percipiatis unde omni voluptatem quia volupta sit aspernatur aut odit aut fugit, sed quaia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+			<a href="#">Read More &#9654</a>
+			
+		</div>
+		<div class="written-post chains">
+			<div class="swirl-background">
+				<img src="assets/blog page/icon-link.png" alt="chains.icon">
+				<p>Elrumi loves our affiliates! Thank you to Creative Digital Studios for all your support and sponsporship!</p>
+				<h4>Http://Creativefakestudio.com</h4>
+			</div>
+		</div>
+		<div class="pic-post">
+			<h3>The Beautiful Flower Crown</h3>
+			<i class="fa fa-clock-o"></i>
+			<i class="fa fa-comments"></i>
+			<img src="assets/blog page/post-03.jpg" alt="post3">
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, sonsectetur, adipisci velit, sed quia non percipiatis unde omni voluptatem quia volupta sit aspernatur aut odit aut fugit, sed quaia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+			<a href="#">Read More &#9654</a>
+		</div>
+		<div class="older-post">
+			<input type="submit" value="OLDER POST" class="button">
+		</div>
+	</main>
+	<footer class="footer">
+		<h2>ELRUMI</h2>
+		<ul>
+			<li class="facebook">Facebook</li>
+			<li>Twitter</li>
+			<li>Linkedin</li>
+			<li>Behance</li>
+			<li>Dribble</li>
+		</ul>
+		<i class="fa fa-copyright"></i>
+		<span>2015 Elrumi. Designed by Pottereight</span>
+	</footer>
+
+</body>
+</html>

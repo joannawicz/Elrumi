@@ -1,0 +1,718 @@
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+
+}	
+
+
+/* End of Set up Styles */
+html, body  {
+	margin: 0;
+	padding: 0;
+}	
+
+p { 
+	font-family: 'Droid Serif', serif;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+h1 {
+
+	letter-spacing: 15px;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding: 0;	
+}
+
+h2 {
+	font-size: 25px;
+	letter-spacing: 5px;
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+}
+h3 { 
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+h4 {
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+span.circle {
+	font-size: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+span.dash {
+	font-size: 34px;
+	left: 0;
+	display: block;
+}
+span.center {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+/*Helper Classes*/
+.anchor {
+	position: relative;
+	top: -55px;
+	display: block;
+}
+
+
+/* End of General Styles */
+/*Navigation*/
+.fixed-navigation {
+	margin: 0;
+	position: fixed;
+	background: transparent;
+	width: 100%;
+	z-index: 99;
+}
+.fixed-navigation.opaque {
+	background: #92fcf9;
+	transition: background 3s ease 0s;   	
+}
+.nav-left {
+	margin-top: 25px;
+	text-align: center;
+	width: 50%;	
+	float: left;
+	
+}
+.nav-right {
+	margin-top: 15px;
+	width: 50%;
+	float: left;
+	text-align: center;
+	
+}
+
+.nav-menu li {
+	list-style-type: none;
+	display: inline-block;
+
+}
+
+.nav-menu a {
+	text-decoration: none;
+	font-family: Montserrat, sans-serif;
+	color: black;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	transition: border-bottom 1s;
+	-webkit-transition: border-bottom 1s;
+
+}
+.nav-menu a:hover {
+	border-bottom: 3px solid black;
+	
+}
+
+ /*Beginning of Hero Image Header*/
+
+.header {
+	position: relative;
+	height: 100vh;
+	background-image: url("assets/home page/hero.jpg");
+	top: 0;
+	background-size: cover;
+	background-position: 100%;
+	background-repeat: no-repeat;
+}
+
+.home-title {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+}
+
+/*End of Header Section*/
+
+/*Beginning of Who we are Styles*/
+
+.who-are-we {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.about-titles {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.yellow-square {
+	width: 240px;
+	height: 240px;
+	background:#ffd96d;
+	position: absolute;
+	top: 105px;
+	left: 41.6%;
+	
+}
+.about-image img {
+	width: 300px;
+	height: 195px;
+	position: relative;
+	top: 67px;
+	left: 39.5%;
+
+}
+
+.who-are-we p {
+	color: lightgray;
+	width: 65%;
+	font-size: 12px;
+	text-align: center;
+	margin: 125px auto 100px;
+	line-height: 150%;
+}
+/*Beginning of Skill Squares*/
+/*Section Div*/
+.skills {
+	background: #f3f3f3;
+}
+.skills-holder {
+	width: 60%;
+	margin: 0 auto;
+}
+/*Skill Element Divs*/
+.skill-sets {
+	display: block;
+	float: left;
+	width: 23%;
+	text-align: center;
+	background: white;
+	margin: 100px 1%;
+	padding: 15px;
+	position: relative;
+
+}
+.skills h3:last-of-type {
+	margin-top: -30px;
+}
+
+.skills-pic img {
+	width: 100%;
+
+}
+.skills-pic .short-image {
+	margin-bottom: 13px;
+}
+
+.skills ul {
+	padding: 0;
+	text-align: center;
+}
+
+.skills li {
+	display: inline-block;
+}
+
+.skills h4 {
+	margin: 0;
+	padding: 0;
+}
+/*Beginning of What We Offer Section
+/*Container for Section*/
+.what-we-do {
+	width: 60%;
+	margin: 0 auto 100px;
+}
+
+.what-we-do h2 {
+ 	margin-top: 100px;
+ 	text-align: center;
+}
+.what-we-do p {
+	font-size: 12px;
+	text-align: center; 
+	font-style: italic;
+	
+}
+/* Four Sections of What we Offer */
+.we-do {
+	margin-top: 50px;
+	width: 50%;
+	float: left;
+}
+.we-do p { 
+	font-size: 12px;
+	color: lightgray;
+	text-align: left;
+	font-style: italic;
+	line-height: 160%;
+	/*margin: 10px 10px;*/
+}
+ 
+.we-do h3 {
+	width: 65%;
+	margin: 0px 5px 0 5px;
+}
+.we-do a {
+	text-decoration: none;
+	color: black;
+}
+.we-do a:hover {
+	color: lightgray;
+}
+
+.we-do p, h3, h4 {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	top: 0;
+}
+
+
+.brand {
+	background: url("assets/home page/icon-01-brand.png") no-repeat;
+	top: 10px;
+	left: 10px;
+	padding-left: 90px;
+
+}
+.web {
+	background: url("assets/home page/icon-02-web.png") no-repeat;
+	top: 10px;
+	left: 10px;
+	padding-left: 90px;
+	
+}
+
+.design { 
+	background: url("assets/home page/icon-03-design.png") no-repeat;
+	top: 10px;
+	left: 10px;
+	padding-left: 90px;
+
+
+}
+.photography {
+	background: url("assets/home page/icon-04-photography.png") no-repeat;
+	top: 10px;
+	left: 10px;
+	padding-left: 90px;
+	
+}
+/*Beginning of Facts Section*/
+/*Background for facts*/
+.facts {
+	background-image: url("assets/home page/facts-bg.jpg");
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding-right: 50%;
+	padding-left: 20%;
+	padding-bottom: 7%;
+	padding-top: 7%;
+}
+/*Content and Number styles*/
+
+.our-facts {
+	width: 100%;
+	left: 0;
+	
+}
+.our-facts p {
+	font-size: 12px; 
+	font-style: italic;
+	
+}
+
+.fact-numbers {
+	width: 33.33%;
+	float: left;
+	text-align: left;
+	padding-top: 15px;
+
+}
+.fact-numbers h4{
+	text-align: left;
+	margin-left: 0;
+}
+/*Contact Section*/
+
+.contact {
+	width: 60%;
+	margin: 100px auto;
+}
+
+.contact-content h2 {
+	text-align: center;
+}
+
+.contact-content p {
+	font-size: 12px;
+	text-align: center; 
+	font-style: italic;
+}
+
+.header-style {
+	font-size: 50px;
+	color: #92fcf9;
+	text-align: center;
+	letter-spacing: 5px;
+	padding-top: 10%;
+}
+
+.contact-content h4 {
+	text-align: center;
+	line-height: 150%;
+}
+
+/*Form within in Contact section*/
+.one-third {
+	margin: 50px 10px 0 10px;
+	width: calc((100% / 3) - (10px * 2));
+	float: left;
+}
+
+.message {
+	width: 98%;
+	margin: 50px 10px;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid gray;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	margin-top: 10px;
+	background: rgba(0, 0, 0, 0);
+	transition: background 1s;
+	-webkit-transition: background 1s;
+	
+}
+
+::-webkit-input-placeholder {
+	font-size: 10px;
+	letter-spacing: 1px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: black;
+}
+/*How would I put hover properties on placeholder txt*/
+/*::-webkit-input-placeholder:hover {
+	color: #92fcf9;
+}*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input:hover {
+	background: #92fcf9;
+}
+.button {
+	display: block;
+	margin: 0 auto; /*How do I make this center*/
+	text-align: center; 
+	width: 200px;
+	height: 40px;
+	background: black;
+	color: white;
+	border: 2px solid darkgray;
+}
+.button:hover {
+	background: darkgray;
+}
+/*Footer Section*/
+
+.footer {
+	background: #ffd96d;
+	padding: 2% 0;
+	text-align: center;
+}
+
+.footer ul {
+	padding: 0;
+	margin: 0;
+}
+.footer li {
+	margin: 8px 0;
+	display: inline-block;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+.footer a {
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	transition: border-bottom 1s;
+	-webkit-transition: border-bottom 1s;
+}
+.footer a:hover {
+	border-bottom: 3px solid black;
+}
+.footer i {
+	font-size: 10px;
+}
+.footer span.copy {
+	font-family: 'Droid Serif', serif;
+	font-size: 10px;
+	font-style: italic;
+}
+
+/*NEW PAGE
+-----------
+WORK PAGE */
+
+
+
+/*Beginning of new page 
+--Header Section Beginning*/
+
+.fixed-navigation { 
+	top: 0;
+}
+
+/*Beginning of header and hero image*/
+
+.workpage-header {
+	text-align: center;
+	margin-top: 200px;
+}
+
+.workpage-header p {
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 3%;
+	font-weight: 400;
+}
+
+.workpage-header img {
+	width: 100vw;
+}
+.main-content {
+	width: 60%;
+	margin: 0 auto;
+	padding: 5% 0;
+}
+
+/*Left and Right Columns
+.Description = Left Column
+.Project-details = Right Column*/
+
+.description {
+	width: 62%;
+	float: left;
+	margin-right: 8%;
+}
+.description img {
+	width: 100%;
+
+}
+.project-details {
+	width: 30%;
+	float: left;
+}
+
+.description h3, .project-details h3 {
+	margin: 0 0 5% 0;
+	
+
+}
+.main-content p {
+	color: lightgray;
+	font-size: 12px;
+	line-height: 150%;
+	padding-bottom: 10px;
+
+}
+p.bold-description {
+	color: black;
+	font-style: italic;
+	font-weight: 700;
+
+}
+.project-details h4 {
+	margin: 0;
+}
+.project-details ol {
+	padding: 0;
+	margin: 0;
+	color: lightgray;
+	font-size: 12px;
+	line-height: 150%;
+	font-family: 'Droid Serif' serif;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.project-details li{
+	list-style: none;
+	counter-increment: myCounter;
+
+}
+.project-details li:before {
+	content: counter(myCounter);
+	font-size: 12px;
+	color: black;
+	font-family: 'Droid Serif' serif;
+	margin-right: 5px;
+
+}
+.project-details img {
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+.teal {
+	background: #92fcf9;
+	border: none;
+	margin-left: 0;
+}
+
+/*End of Work Page ---*/
+/*Beginning of New Page 
+------Blog Page-------*/
+
+.blog-header {
+	width: 100%;
+	height: 400px;
+	background: 
+	 linear-gradient(
+      rgba(146, 252, 249, 0.9), 
+      rgba(146, 252, 249, 0.9)
+    ),
+	url("assets/blog page/swirl_pattern.png");
+}
+.blog-header h1 {
+	padding: 10% 0;
+
+}
+/*Beginning of posts on blog*/
+
+.blog-content {
+	max-width: 60%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+.blog-title  {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.blog-title p {
+	font-size: 12px;
+	font-style: italic;
+}
+/*BLOCK QUOTES*/
+
+.written-post {
+	width: 100%;
+	border: 1px solid black;
+	margin: 100px 0;
+}
+.swirl-background {
+	background: 
+	linear-gradient(
+      rgba(255, 255, 255, 0.5), 
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("assets/blog page/swirl_pattern.png");
+	border: 10px white solid;
+	padding: 15px 15px;
+}
+
+.written-post p {
+	font-size: 24px;
+	font-style: italic;
+
+}
+.chains p { 
+	font-size: 24px;
+	font-style: normal;
+	padding: 0 90px;
+}
+/* IMAGES*/
+
+.pic-post img:last-of-type{
+	width: 100%;
+}
+.pic-post p {
+	font-size: 12px;
+	font-style: italic;
+}
+.pic-post p:last-of-type {
+	color: lightgray;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 150%;
+	padding:0 100px 10px 100px;
+
+}
+
+.pic-post i{
+	margin: 0 5px 20px 5px;
+}
+
+.pic-post i.fa-clock-o::after {
+	content: "January 13, 2015";
+	font-family: 'Droid Serif' serif;
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 10px;
+} 
+.pic-post i.fa-comments::after {
+	content: "4 comments";
+	font-family: 'Droid Serif' serif;
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 10px;
+}
+
+.pic-post a {
+	text-decoration: none;
+	color: black;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+.pic-post a:hover {
+	color: lightgray;
+}
+
+.older-post {
+	margin: 50px 0px 100px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog Page</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="normal.css">
+	<link rel="stylesheet" href="styles.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		// Jquery script for Navbar opacity on scroll
+  (function(){
+    $(window).scroll(function() {
+        
+        if($(this).scrollTop() > 50) { 
+            $('.fixed-navigation').addClass('opaque'); // 
+        } else {
+            $('.fixed-navigation').removeClass('opaque'); 
+        }
+    });
+  })();
+    
+
+	</script>
+</head>
+<body>
+	<nav class="fixed-navigation opaque">
+		<div class="nav-left">
+			<h2 class="nav-logo">ELRUMI</h2>
+		</div>
+		<div class="nav-right">
+			<ul class="nav-menu">
+				<li><a href="index.html">Home</a><span class="circle">&#9679;</span></li>
+				<li><a href="work.html">Work</a><span class="circle">&#9679;</span></li>
+				<li><a href="blog.html">Blog</a><span class="circle">&#9679;</span></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header class="blog-header">
+		<h1>Discover Our News<br> & Stay Inspired</h1>
+	</header>
+	<main class="blog-content">
+		<div class="blog-title">
+			<h2>Our Blog</h2>
+			<p>Latest News and More</p>
+			<span class="dash">&#8212;</span>
+		</div>
+		<div class="pic-post">
+			<h3>You Don't Need Eyes To See</h3>
+			<i class="fa fa-clock-o"></i>
+			<i class="fa fa-comments"></i>
+			<img src="assets/blog page/post-01.jpg" alt="post1">
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, sonsectetur, adipisci velit, sed quia non percipiatis unde omni voluptatem quia volupta sit aspernatur aut odit aut fugit, sed quaia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+			<a href="#">Read More &#9654</a>
+		</div>
+		<div class="written-post quote">
+			<div class="swirl-background">
+				<img src="assets/blog page/icon-quote.png" alt="quotes">
+				<p>"Working with Elrumi was extremely fun, they delivered results on time and sometimes even ahead of schedule."</p>
+				<h4>Dave August</h4>
+			</div>
+		</div>
+		<div class="pic-post">
+			<h3>Interview with Michelle May</h3>
+			<i class="fa fa-clock-o"></i>
+			<i class="fa fa-comments"></i>		
+			<img src="assets/blog page/post-02.jpg" alt="post2">
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, sonsectetur, adipisci velit, sed quia non percipiatis unde omni voluptatem quia volupta sit aspernatur aut odit aut fugit, sed quaia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+			<a href="#">Read More &#9654</a>
+			
+		</div>
+		<div class="written-post chains">
+			<div class="swirl-background">
+				<img src="assets/blog page/icon-link.png" alt="chains.icon">
+				<p>Elrumi loves our affiliates! Thank you to Creative Digital Studios for all your support and sponsporship!</p>
+				<h4>Http://Creativefakestudio.com</h4>
+			</div>
+		</div>
+		<div class="pic-post">
+			<h3>The Beautiful Flower Crown</h3>
+			<i class="fa fa-clock-o"></i>
+			<i class="fa fa-comments"></i>
+			<img src="assets/blog page/post-03.jpg" alt="post3">
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, sonsectetur, adipisci velit, sed quia non percipiatis unde omni voluptatem quia volupta sit aspernatur aut odit aut fugit, sed quaia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+			<a href="#">Read More &#9654</a>
+		</div>
+		<div class="older-post">
+			<input type="submit" value="OLDER POST" class="button">
+		</div>
+	</main>
+	<footer class="footer">
+			<h2>ELRUMI</h2>
+			<ul>
+				<li class="facebook"><a href="#">Facebook</a><span class="circle">&#9679;</span</li>
+				<li><a href="#">Twitter</a><span class="circle">&#9679;</span</li>
+				<li><a href="#">Linkedin</a><span class="circle">&#9679;</span</li>
+				<li><a href="#">Behance</a><span class="circle">&#9679;</span</li>
+				<li><a href="#">Dribble</a></li>
+			</ul>
+			<i class="fa fa-copyright"></i>
+			<span class="copy">2015 Elrumi. Designed by Pottereight</span>
+	</footer>
+
+</body>
+</html>

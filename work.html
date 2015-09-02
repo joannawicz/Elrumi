@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<title>Work Page</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="normal.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+   		// Jquery script for Navbar opacity on scroll 
+	(function(){
+    $(window).scroll(function() {
+        
+        if($(this).scrollTop() > 50) { 
+            $('.fixed-navigation').addClass('opaque'); 
+        } else {
+            $('.fixed-navigation').removeClass('opaque'); 
+        }
+    });
+  })();
+    
+
+	</script>
+</head>
+<body>
+		<nav class="fixed-navigation opaque">
+		<div class="nav-left">
+			<h2 class="nav-logo">ELRUMI</h2>
+		</div>
+		<div class="nav-right">
+			<ul class="nav-menu">
+				<li><a href="index.html">Home</a><span class="circle">&#9679;</span></li>
+				<li><a href="work.html">Work</a><span class="circle">&#9679;</span></li>
+				<li><a href="blog.html">Blog</a><span class="circle">&#9679;</span></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header class="workpage-header">
+			<h2>You Have to be odd to</br>be number one</h2>
+			<p>Branding, Graphic Design</p>
+			<img src="assets/work page/project-hero.jpg" alt="work-hero">
+	</header>
+	<section class="main-content clearfix">
+			<div class="description">
+				<h3>Description</h3>
+				<p>Claritas est etia processust dynamicus, qui sequitar mutationem consuetium lectorum. Mirum est notare quam littera gotica, quam nunc putamus parum clarum, anteposuerit litterarum formas humanitatis per seacula quarta dcima et quinta decima.</p>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione sequinescuint. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nom numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+				<p class="bold-description">
+					Duis aute irur dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla quia et pariatur. Excepteur sint occaecat cupidatat non proident. </p>
+				<img src="assets/work page/project-detail.jpg" alt="work-detail">
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quarat voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quaso architecto baetae vitae dicta sunt explicable. nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed consequunter magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+			</div>
+			<div class="project-details">
+				<h3>Project Details</h3>
+				<h4>Client</h4>
+				<p>ENVATO MARKET</p>
+				<h4>Date</h4>
+				<p>February 14, 2015</p>
+				<h4>What we did</h4>
+				<ol>
+					<li>Logo Design</li>
+					<li>Website</li>
+				</ol>
+				<h4>Tools</h4>
+				<ol>
+					<li>Photoshop</li>
+				</ol>
+				<h4>Category</h4>
+				<p>Branding, Web Design, Wordpress.</p>
+				<h4>Category</h4>
+				<img src="assets/work page/social-icons.png" alt="social-icons">
+	 			<input type="submit" value="VISIT WEBSITE" class="button teal">
+			</div>
+		</div>	
+	</section>
+	<footer class="footer">
+			<h2>ELRUMI</h2>
+			<ul>
+				<li class="facebook"><a href="#">Facebook</a><span class="circle">&#9679;</span</li>
+				<li><a href="#">Twitter</a><span class="circle">&#9679;</span</li>
+				<li><a href="#">Linkedin</a><span class="circle">&#9679;</span</li>
+				<li><a href="#">Behance</a><span class="circle">&#9679;</span</li>
+				<li><a href="#">Dribble</a></li>
+			</ul>
+			<i class="fa fa-copyright"></i>
+			<span class="copy">2015 Elrumi. Designed by Pottereight</span>
+	</footer>
+</body>
+</html>
